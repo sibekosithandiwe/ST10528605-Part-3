@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Bees Recovery</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+<nav>
+    <div class="navbar">
+     <img src="images/logo.png" width="125" length="175"  alt="Image of the organization's logo">
+      <a href="index.html" class="logo"><em>"You've got a friend in bees"</em></a>
+      
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="programs_services.html"><li>Programs &amp; Servives</li></a>
+                <a href="get_involoved.html"><li>Get Involved</li></a>
+      </ul>
+    </div>
+</nav>
+    <main>
+
+        <div class="page-header">
+    <h1>Contact Us!&#9825;</h1>
+    <p>We'd love to hear from you. Fill in the form below and we'll get back to you shortly.</p>
+  </div>
+  <div class="container contact-wrapper">
+  <div class="contact-form-container">
+      <div>
+        <label for="fname">First Name *</label>
+        <input id="fname" type="text" name="firstname" placeholder="Your first name" autocomplete="given-name" />
+        <div id="fname-error" class="field-error" role="alert"></div>
+      </div>
+
+      <div>
+        <label for="lname">Last Name *</label>
+        <input id="lname" type="text" name="lastname" placeholder="Your last name" autocomplete="family-name" />
+        <div id="lname-error" class="field-error" role="alert"></div>
+      </div>
+
+      <div>
+        <label for="ename">Email Address *</label>
+        <input id="ename" type="email" name="email" placeholder="Your email address" autocomplete="email" />
+        <div id="ename-error" class="field-error" role="alert"></div>
+      </div>
+
+      <div>
+        <label for="subject">Message *</label>
+        <textarea id="subject" name="subject" placeholder="How can we help you?" style="height:200px" aria-label="Your message"></textarea>
+        <div id="subject-error" class="field-error" role="alert"></div>
+      </div>
+
+      <button type="button" id="submitBtn" onclick="handleContactSubmit()" class="button submit-btn">
+        Send Message
+      </button>
+    </div>
+  </div>
+    </main>
+    <br>
+    <br>
+<footer>
+	 <div class="footer-logo">
+      <h2>Blue Bees</h2>
+      <p><em>You've got a friend in bees</em></p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="get_involoved.html">Volunteer Sign Up</a></li>
+        <li><a href="programs_services.html">Programs &amp; Servives</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Cell: (+27) 81 544 1940</p>
+        <p>Telephone: 031 639 1234</p>
+        <p>Operating Weekday hours: Monday - Thursday 9am to 5pm</p>
+        <p>Operating Weekend hours: Friday - Sunday 11am to 3pm</p>
+        <p>Email: healing@bluebees.org</p>
+        <p>All rights reserved for Blue Bees PTY Ltd &copy; </p>
+        <p>Address: 6 Prospect Hall Rd, Prospect Hall, Durban North, 4051</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

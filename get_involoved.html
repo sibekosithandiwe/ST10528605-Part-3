@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Bees Recovery</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+<nav>
+    <div class="navbar">
+     <img src="images/logo.png" width="125" length="175"  alt="Image of the organization's logo">
+      <a href="index.html" class="logo"><em>"You've got a friend in bees"</em></a>
+      
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="programs_services.html"><li>Programs &amp; Servives</li></a>
+                <a href="get_involoved.html"><li>Get Involved</li></a>
+      </ul>
+    </div>
+</nav>
+    <main>
+<section class="volunteer-hero">
+
+    <img src="images/volunteer.jpg" alt="Volunteers">
+
+    <div class="volunteer-hero-text">
+        <h2>Sign Up to Volunteer</h2>
+    </div>
+
+</section>
+
+<section class="form">
+    <div class="form-text">
+      <div class="container contact-wrapper">
+  <div class="contact-form-container">
+        <h2>Sign-Up Form</h2>
+    <p>Please complete this form to join our volunteer team. Fields marked with <strong>*</strong> are required.</p>
+    <form>
+      <div>
+        <label for="firstName">First Name *</label>
+        <input id="firstName" name="firstName" type="text" required autocomplete="given-name" />
+      </div>
+      <br>
+      <div>
+        <label for="lastName">Last Name *</label>
+        <input id="lastName" name="lastName" type="text" required autocomplete="family-name" />
+      </div>
+      <br>
+      <div>
+        <label for="email">Email Address *</label>
+        <input id="email" name="email" type="email" required autocomplete="email" />
+      </div>
+      <br>
+      <div>
+        <label for="phone">Phone Number *</label>
+        <input id="phone" name="phone" type="tel" required pattern="[0-9+\-\s]{7,20}" placeholder="+27 82 123 4567" />
+        <div>Include country code if outside local area.</div>
+      </div>
+      <br>
+      <div>
+        <label for="address">Address</label>
+        <input id="address" name="address" type="text" autocomplete="street-address" />
+      </div>
+      <br>
+      <div>
+        <label for="availability">Availability *</label>
+        <select id="availability" name="availability" required>
+          <option value="">Select availability</option>
+          <option>Weekdays mornings</option>
+          <option>Weekdays afternoons</option>
+          <option>Weekends</option>
+          <option>Flexible / On-call</option>
+        </select>
+      </div>
+        <br>
+      <div>
+        <label for="startDate">Earliest Start Date</label>
+        <input id="startDate" name="startDate" type="date" />
+      </div>
+      <br>
+      <div>
+        <label>Skills and Interests</label>
+        <div class="skills-grid" role="group" aria-label="Skills">
+          <label><input type="checkbox" name="skills" value="event-support" /> Event support</label>
+          <label><input type="checkbox" name="skills" value="fundraising" /> Fundraising</label>
+          <label><input type="checkbox" name="skills" value="administration" /> Administration</label>
+          <label><input type="checkbox" name="skills" value="teaching" /> Teaching / Mentoring</label>
+          <label><input type="checkbox" name="skills" value="social-media" /> Social media</label>
+          <label><input type="checkbox" name="skills" value="logistics" /> Logistics</label>
+        </div>
+      </div>
+      <br>
+      <div>
+        <label for="experience">Relevant Experience</label>
+        <textarea id="experience" name="experience" placeholder="Briefly describe any relevant experience or training"></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="emergencyName">Emergency Contact Name *</label>
+        <input id="emergencyName" name="emergencyName" type="text" required />
+      </div>
+      <br>
+      <div>
+        <label for="emergencyPhone">Emergency Contact Phone *</label>
+        <input id="emergencyPhone" name="emergencyPhone" type="tel" required pattern="[0-9+\-\s]{7,20}" />
+      </div>
+      <br>
+      <div>
+        <label for="resume">Upload Resume (optional)</label>
+        <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" />
+        <div>Accepted formats: PDF, DOC, DOCX. Max 5 MB.</div>
+      </div>
+      <br>
+      <div>
+        <label for="howHeard">How did you hear about us?</label>
+        <select id="howHeard" name="howHeard">
+          <option value="">Choose one</option>
+          <option>Friend or family</option>
+          <option>Social media</option>
+          <option>Website</option>
+          <option>Community event</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <br>  
+      <div>
+        <label for="motivation">Why do you want to volunteer? *</label>
+        <textarea id="motivation" name="motivation" required placeholder="Tell us what motivates you to volunteer (short paragraph)"></textarea>
+      </div>
+      <br>
+      <div>
+        <label class="note"><input id="consent" name="consent" type="checkbox" required /> <strong>I consent</strong> to a background check if required and agree to the volunteer code of conduct *</label>
+      </div>
+      <br>
+      <div id="formError" class="error full" aria-live="polite" style="display:none;"></div>
+
+      <div>
+        <button type="button" class="secondary" onclick="document.getElementById('volunteerForm').reset();">Reset</button>
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+    </div>
+  </div>
+     </section>
+    <br>
+    <div>
+      <strong>Thank you.</strong> Your volunteer application has been received. We will contact you soon.
+    </div>
+
+    </main>
+    <br>
+  
+<footer>
+	 <div class="footer-logo">
+      <h2>Blue Bees</h2>
+      <p><em>You've got a friend in bees</em></p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="get_involoved.html">Volunteer Sign Up</a></li>
+        <li><a href="programs_services.html">Programs &amp; Servives</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Cell: (+27) 81 544 1940</p>
+        <p>Telephone: 031 639 1234</p>
+        <p>Operating Weekday hours: Monday - Thursday 9am to 5pm</p>
+        <p>Operating Weekend hours: Friday - Sunday 11am to 3pm</p>
+        <p>Email: healing@bluebees.org</p>
+        <p>All rights reserved for Blue Bees PTY Ltd &copy; </p>
+        <p>Address: 6 Prospect Hall Rd, Prospect Hall, Durban North, 4051</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
