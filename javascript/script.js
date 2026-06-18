@@ -60,7 +60,24 @@ function searchContent() {
         alert("No matching content found.");
     }
 }
+// NEWSLETTER FORM HANDLER
 
+function handleNewsletterSubmit() {
+
+    let email = document.getElementById("newsletterEmail").value;
+
+    if (
+        email === ""
+
+    ) {
+        alert("Please enter your email address.");
+        return false;
+    }
+
+    alert("Thank you for subscribing to the Blue Bees Recovery newsletter!");
+
+    document.getElementById("newsletterEmail").value = "";
+}
 
 // DYNAMIC COPYRIGHT YEAR
 
