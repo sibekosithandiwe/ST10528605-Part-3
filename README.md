@@ -33,7 +33,7 @@ website also targets parents and guardians looking for programs that can positiv
 themselves and their children. A secondary audience consists of volunteers, sponsors, donors, and
 community members who are interested in supporting rehabilitation initiatives and environmental
 conservation efforts.
-Website Published on GitHub: [https://github.com/sibekosithandiwe/ST10528605](https://github.com/sibekosithandiwe/ST10528605-Part-3)
+Website Published on GitHub:https://github.com/sibekosithandiwe/ST10528605-Part-3
 Website Goals and Objectives
  Provide information about Blue Bees Recovery by educating visitors about the organization’s
 mission, history, values, and the role of beekeeping in rehabilitation.
