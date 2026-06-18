@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Bees Recovery</title>
+ <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Bees Recovery | Get Involved</title>
+
+    <meta name="description"
+          content="Blue Bees Recovery is a rehabilitation organisation that uses beekeeping to help recovering addicts and their children rebuild their lives.">
+
+    <meta name="keywords"
+          content="Blue Bees Recovery, rehabilitation, addiction recovery, beekeeping, volunteer, recovery programs, family support">
+
+    <meta name="author"
+          content="Sithandiwe Tyra Sibeko">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-</head>
+     <script src="javascript/script.js" defer></script>
+</head> 
 <body>
     <header>
 <nav>
@@ -31,7 +42,7 @@
     <main>
 <section class="volunteer-hero">
 
-    <img src="images/volunteer.jpg" alt="Volunteers">
+    <img src="images/volunteer.jpg" alt="Volunteers giving out food">
 
     <div class="volunteer-hero-text">
         <h2>Sign Up to Volunteer</h2>
@@ -45,15 +56,15 @@
   <div class="contact-form-container">
         <h2>Sign-Up Form</h2>
     <p>Please complete this form to join our volunteer team. Fields marked with <strong>*</strong> are required.</p>
-    <form>
+    <form onsubmit="return validateVolunteerForm()">
       <div>
         <label for="firstName">First Name *</label>
-        <input id="firstName" name="firstName" type="text" required autocomplete="given-name" />
+        <input id="fname" name="firstName" type="text" required autocomplete="given-name" />
       </div>
       <br>
       <div>
         <label for="lastName">Last Name *</label>
-        <input id="lastName" name="lastName" type="text" required autocomplete="family-name" />
+        <input id="lname" name="lastName" type="text" required autocomplete="family-name" />
       </div>
       <br>
       <div>
@@ -63,7 +74,7 @@
       <br>
       <div>
         <label for="phone">Phone Number *</label>
-        <input id="phone" name="phone" type="tel" required pattern="[0-9+\-\s]{7,20}" placeholder="+27 82 123 4567" />
+        <input id="phoneNo" name="phone" type="tel" required pattern="[0-9+\-\s]{7,20}" placeholder="+27 82 123 4567" />
         <div>Include country code if outside local area.</div>
       </div>
       <br>
@@ -142,21 +153,18 @@
         <label class="note"><input id="consent" name="consent" type="checkbox" required /> <strong>I consent</strong> to a background check if required and agree to the volunteer code of conduct *</label>
       </div>
       <br>
-      <div id="formError" class="error full" aria-live="polite" style="display:none;"></div>
-
+      <div id="formError" class="error full" aria-live="polite" style="display:none;">
+      </div>
       <div>
-        <button type="button" class="secondary" onclick="document.getElementById('volunteerForm').reset();">Reset</button>
-        <button type="submit">Submit Application</button>
+        <button type="submit">
+        Submit
+        </button>
       </div>
     </form>
     </div>
   </div>
      </section>
     <br>
-    <div>
-      <strong>Thank you.</strong> Your volunteer application has been received. We will contact you soon.
-    </div>
-
     </main>
     <br>
   
@@ -184,7 +192,7 @@
         <p>Operating Weekday hours: Monday - Thursday 9am to 5pm</p>
         <p>Operating Weekend hours: Friday - Sunday 11am to 3pm</p>
         <p>Email: healing@bluebees.org</p>
-        <p>All rights reserved for Blue Bees PTY Ltd &copy; </p>
+        <p>All rights reserved for Blue Bees Recovery &copy; <span id="year"></span> </p>
         <p>Address: 6 Prospect Hall Rd, Prospect Hall, Durban North, 4051</p>
     </div>
 
