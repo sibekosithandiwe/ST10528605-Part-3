@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Bees Recovery</title>
+ <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Bees Recovery | Contact Us</title>
+
+    <meta name="description"
+          content="Blue Bees Recovery is a rehabilitation organisation that uses beekeeping to help recovering addicts and their children rebuild their lives.">
+
+    <meta name="keywords"
+          content="Blue Bees Recovery, rehabilitation, addiction recovery, beekeeping, volunteer, recovery programs, family support">
+
+    <meta name="author"
+          content="Sithandiwe Tyra Sibeko">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-</head>
+     <script src="javascript/script.js" defer></script>
+</head> 
 <body>
     <header>
 <nav>
@@ -36,6 +47,7 @@
   </div>
   <div class="container contact-wrapper">
   <div class="contact-form-container">
+    <form>
       <div>
         <label for="fname">First Name *</label>
         <input id="fname" type="text" name="firstname" placeholder="Your first name" autocomplete="given-name" />
@@ -55,14 +67,25 @@
       </div>
 
       <div>
-        <label for="subject">Message *</label>
-        <textarea id="subject" name="subject" placeholder="How can we help you?" style="height:200px" aria-label="Your message"></textarea>
-        <div id="subject-error" class="field-error" role="alert"></div>
+        <label for="subject">Subject *</label>
+        <input id="subj" type="text" name="subject" placeholder="What are you contacting us about?" autocomplete="subject" />
+        <div id="subj-error" class="subject-error" role="alert"></div>
       </div>
 
-      <button type="button" id="submitBtn" onclick="handleContactSubmit()" class="button submit-btn">
-        Send Message
-      </button>
+      <div>
+        <label for="subject">Message *</label>
+        <textarea id="message" name="message" placeholder="How can we help you?" style="height:200px" aria-label="Your message"></textarea>
+        <div id="message-error" class="field-error" role="alert"></div>
+      </div>
+
+      <div>
+    <button type="button" onclick="validateContactForm()">
+    Send Message
+</button>
+    </div>
+  </div>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.3816397159203!2d31.039401500000004!3d-29.795516900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707ac8b08a72b%3A0xb76adad4d630ef8a!2sJapanese%20Gardens!5e0!3m2!1sen!2sza!4v1781796099240!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
     </main>
