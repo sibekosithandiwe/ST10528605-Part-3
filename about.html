@@ -43,7 +43,7 @@
     <main>
         <div class="about-section"></div>
         <section class="about-hero">
-        <img src="images/bluebee1.jpg" alt="Close-up of bees on a blue flower">
+        <img src="images/bluebee1.jpg" alt="Close-up of bees on a blue flower" onclick="openLightbox(this.src)">
 
         <div class="about-text">
             <h2>The Blue Bees Recovery</h2>
@@ -93,7 +93,7 @@
   <div class="about-row">
     <div class="about-column">
       <div class="about-card">
-        <img src="images/faye-johnston.jpg" alt="CEO Faye" style="width:100%">
+        <img src="images/faye-johnston.jpg" alt="CEO Faye" style="width:100%" onclick="openLightbox(this.src)">
         <div class="about-container">
           <h2>Faye Johnston</h2>
           <p class="about-title">CEO of Blue Bees</p>
@@ -106,7 +106,7 @@
 
     <div class="about-column">
       <div class="about-card">
-        <img src="images/sam-reddy.jpg" alt="Rehabilitation Manager Sam" style="width:100%">
+        <img src="images/sam-reddy.jpg" alt="Rehabilitation Manager Sam" style="width:100%" onclick="openLightbox(this.src)">
         <div class="about-container">
           <h2>Sam Reddy</h2>
           <p class="about-title">Rehabilitation Manager</p>
@@ -119,7 +119,7 @@
 
     <div class="about-column">
       <div class="about-card">
-        <img src="images/zahide-moore.jpg" alt="Beekeepers Supervisor Zahide" style="width:100%">
+        <img src="images/zahide-moore.jpg" alt="Beekeepers Supervisor Zahide" style="width:100%" onclick="openLightbox(this.src)">
         <div class="container">
           <h2>Zahide Moore</h2>
           <p class="about-title">Beekeepers Supervisor</p>
@@ -172,6 +172,16 @@
       </div>
     </div>
 </footer>
-    
+    <div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeLightbox()">
+        &times;
+    </span>
+
+    <img id="lightbox-img"
+         src=""
+         alt="Gallery Image">
+
+</div>
 </body>
 </html>
