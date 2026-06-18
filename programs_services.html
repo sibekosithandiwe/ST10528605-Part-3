@@ -40,7 +40,7 @@
     </div>
 </nav>
  <section class="pns-hero">
-        <img src="images/bluebee2.jpg" alt="Close-up of bees on a blue flower">
+        <img src="images/bluebee2.jpg" alt="Close-up of bees on a blue flower" onclick="openLightbox(this.src)">
 
         <div class="pns-hero-box">
             <h2>Recovery Programs &amp; Servives</h2>
@@ -88,11 +88,11 @@
             </button>
         </div>
 
-        <img src="images/beekeepers.jpg" alt="Beekeepers harvesting honey">
+        <img src="images/beekeepers.jpg" alt="Beekeepers harvesting honey" onclick="openLightbox(this.src)">
     </section>
 
     <section class="pns-information-card-reverse">
-        <img src="images/kids.jpg" alt="Children enjoying outdoor activitites">
+        <img src="images/kids.jpg" alt="Children enjoying outdoor activitites" onclick="openLightbox(this.src)">
 
         <div class="pns-text">
             <h3>02</h3>
@@ -130,7 +130,7 @@
             </button>
         </div>
 
-        <img src="images/tour.jpg" alt="Touring tractor">
+        <img src="images/tour.jpg" alt="Touring tractor" onclick="openLightbox(this.src)">
     </section>
     </main>
 	
@@ -171,5 +171,16 @@
       </div>
     </div>
 </footer>
+<div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeLightbox()">
+        &times;
+    </span>
+
+    <img id="lightbox-img"
+         src=""
+         alt="Gallery Image">
+
+</div>
 </body>
 </html>
